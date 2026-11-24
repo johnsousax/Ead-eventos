@@ -1,0 +1,327 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>A&amp;D Eventos · Eventos, hotel e esporte no Turu, São Luís</title>
+<meta name="description" content="A A&D Eventos reúne casa de eventos, hotel, escola de natação e escola de futebol society no Turu, em São Luís (MA).">
+<meta property="og:title" content="A&D Eventos · Eventos, hotel e esporte no mesmo endereço">
+<meta property="og:description" content="Salão de festas, auditório, hotel, piscina e campo society no Turu, São Luís.">
+<meta property="og:image" content="img/salao-lustres.jpg">
+<meta name="theme-color" content="#0b0b0c">
+<link rel="icon" href="img/logo-ad.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#0b0b0c;--bg2:#141416;--card:#1b1b1e;--line:#2a2a2e;--ink:#f6f5f2;--ink2:#b3b1ab;--orange:#f39314;--orange2:#ffb04a;--cream:#f7f3ec;--r:28px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--ink);font-family:Inter,system-ui,sans-serif;-webkit-font-smoothing:antialiased;line-height:1.55;overflow-x:hidden}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+h1,h2,h3{font-family:Outfit,Inter,sans-serif;font-weight:600;letter-spacing:-.025em;line-height:1.05;text-wrap:balance}
+.wrap{max-width:1180px;margin:0 auto;padding:0 22px}
+.eyebrow{display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:500;color:var(--orange2);background:rgba(243,147,20,.12);padding:7px 14px;border-radius:99px}
+.eyebrow::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--orange)}
+.btn{display:inline-flex;align-items:center;gap:10px;height:52px;padding:0 26px;border-radius:99px;font-weight:600;font-size:15.5px;transition:transform .25s cubic-bezier(.2,.8,.2,1),background .25s}
+.btn:active{transform:scale(.97)}
+.btn-main{background:var(--orange);color:#111}
+.btn-main:hover{background:var(--orange2)}
+.btn-ghost{background:rgba(255,255,255,.08);color:var(--ink)}
+.btn-ghost:hover{background:rgba(255,255,255,.14)}
+.btn svg{width:19px;height:19px}
+
+/* nav */
+nav{position:fixed;inset:14px 14px auto;z-index:50;display:flex;justify-content:center}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:18px;width:100%;max-width:1150px;background:rgba(18,18,20,.72);backdrop-filter:saturate(180%) blur(18px);-webkit-backdrop-filter:saturate(180%) blur(18px);border:1px solid rgba(255,255,255,.08);border-radius:99px;padding:8px 8px 8px 12px}
+.nav .logo img{height:42px;width:auto}
+.nav ul{display:flex;gap:4px;list-style:none}
+.nav ul a{font-size:14px;color:var(--ink2);padding:9px 14px;border-radius:99px;transition:.2s}
+.nav ul a:hover{color:var(--ink);background:rgba(255,255,255,.07)}
+.nav .btn{height:44px;padding:0 20px;font-size:14px}
+@media(max-width:860px){.nav ul{display:none}}
+
+/* hero */
+.hero{position:relative;padding:130px 0 70px;overflow:hidden}
+.hero .glow{position:absolute;width:620px;height:620px;border-radius:50%;background:radial-gradient(circle,rgba(243,147,20,.22),transparent 65%);top:-160px;right:-160px;pointer-events:none}
+.hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:40px;align-items:center}
+.hero h1{font-size:clamp(42px,6.2vw,76px);margin:20px 0 18px}
+.hero h1 em{font-style:normal;color:var(--orange)}
+.hero p.lead{font-size:18px;color:var(--ink2);max-width:520px}
+.hero .ctas{display:flex;flex-wrap:wrap;gap:12px;margin-top:30px}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:30px}
+.chip{font-size:13.5px;padding:8px 15px;border-radius:99px;border:1px solid var(--line);color:var(--ink2)}
+.collage{position:relative;height:540px}
+.collage .c{position:absolute;overflow:hidden;box-shadow:0 30px 60px rgba(0,0,0,.45)}
+.collage .c img{width:100%;height:100%;object-fit:cover}
+.c1{width:78%;height:64%;right:0;top:0;border-radius:200px 200px 40px 200px}
+.c2{width:52%;height:46%;left:0;bottom:0;border-radius:50%}
+.c3{width:40%;height:34%;right:4%;bottom:2%;border-radius:40px 140px 140px 140px}
+.collage .dot{position:absolute;border-radius:50%;background:var(--orange)}
+.d1{width:64px;height:64px;left:8%;top:12%}
+.d2{width:22px;height:22px;left:46%;bottom:44%;background:var(--ink)!important}
+.ring{position:absolute;width:150px;height:150px;border-radius:50%;border:2px dashed rgba(243,147,20,.5);left:-2%;top:30%}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr}.collage{height:400px;margin-top:20px}}
+
+/* marquee */
+.marq{border-block:1px solid var(--line);overflow:hidden;padding:18px 0;background:var(--bg2)}
+.marq .track{display:flex;gap:14px;width:max-content;animation:mq 38s linear infinite}
+.marq span{white-space:nowrap;font-family:Outfit;font-size:20px;color:var(--ink2);display:flex;align-items:center;gap:14px}
+.marq span::after{content:"";width:10px;height:10px;border-radius:50%;background:var(--orange)}
+@keyframes mq{to{transform:translateX(-50%)}}
+
+/* sections */
+section.s{padding:110px 0}
+.head{max-width:720px;margin-bottom:46px}
+.head h2{font-size:clamp(34px,4.6vw,54px);margin:16px 0 14px}
+.head p{color:var(--ink2);font-size:17px}
+.cards{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+.card{position:relative;border-radius:var(--r);overflow:hidden;background:var(--card);min-height:320px}
+.card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s cubic-bezier(.2,.8,.2,1)}
+.card:hover img{transform:scale(1.05)}
+.card::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 40%,rgba(0,0,0,.82))}
+.card .t{position:absolute;left:22px;right:22px;bottom:20px;z-index:2}
+.card .t h3{font-size:24px}
+.card .t p{font-size:14.5px;color:#d8d5cf;margin-top:4px}
+.card .pill{position:absolute;z-index:2;top:16px;left:16px;font-size:12.5px;font-weight:600;padding:6px 12px;border-radius:99px;background:rgba(0,0,0,.55);backdrop-filter:blur(8px)}
+.w7{grid-column:span 7}.w5{grid-column:span 5}.w4{grid-column:span 4}.w6{grid-column:span 6}.w8{grid-column:span 8}
+.tall{min-height:460px}
+@media(max-width:860px){.cards>*{grid-column:span 12!important}.card{min-height:280px}}
+
+.split{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.split .imgs{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.split .imgs img{width:100%;height:300px;object-fit:cover;border-radius:var(--r)}
+.split .imgs img.round{border-radius:180px 180px 28px 28px}
+.split .imgs img.big{grid-column:span 2;height:280px}
+.list{list-style:none;display:grid;gap:12px;margin-top:24px}
+.list li{display:flex;gap:12px;align-items:flex-start;color:var(--ink2);font-size:16px}
+.list li::before{content:"";flex:none;width:22px;height:22px;border-radius:50%;background:rgba(243,147,20,.16) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23f39314' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M5 12l5 5L20 7'/%3E%3C/svg%3E") center/13px no-repeat;margin-top:1px}
+@media(max-width:860px){.split{grid-template-columns:1fr}.split .imgs img{height:220px}}
+
+.light{background:var(--cream);color:#151515}
+.light .head p,.light .list li{color:#55524c}
+.light .eyebrow{color:#a85d00}
+
+.schools{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.school{border-radius:36px;overflow:hidden;background:#fff;box-shadow:0 20px 50px rgba(0,0,0,.08)}
+.school img{width:100%;height:300px;object-fit:cover}
+.school .b{padding:26px 28px 30px}
+.school h3{font-size:28px;margin-bottom:8px}
+.school p{color:#55524c}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.tags span{font-size:13px;padding:7px 13px;border-radius:99px;background:#f1ece3;color:#3b3934}
+@media(max-width:860px){.schools{grid-template-columns:1fr}}
+
+.gallery{columns:4 220px;column-gap:14px}
+.gallery img{width:100%;margin-bottom:14px;border-radius:24px;break-inside:avoid}
+.gallery img:nth-child(3n){border-radius:120px 120px 24px 24px}
+
+.loc{display:grid;grid-template-columns:1fr 1.2fr;gap:18px}
+.loc .info{background:var(--card);border-radius:36px;padding:36px}
+.loc .info h3{font-size:30px;margin-bottom:18px}
+.loc .row{display:flex;gap:14px;padding:14px 0;border-bottom:1px solid var(--line)}
+.loc .row:last-of-type{border:0}
+.loc .row b{display:block;font-weight:600;font-size:15px}
+.loc .row span{color:var(--ink2);font-size:14.5px}
+.loc .ic{flex:none;width:42px;height:42px;border-radius:50%;background:rgba(243,147,20,.14);display:grid;place-items:center}
+.loc .ic svg{width:20px;height:20px;stroke:var(--orange)}
+.map{border-radius:36px;overflow:hidden;min-height:420px;background:var(--card)}
+.map iframe{width:100%;height:100%;min-height:420px;border:0;filter:grayscale(.3) contrast(1.05)}
+@media(max-width:860px){.loc{grid-template-columns:1fr}}
+
+.cta{margin:0 auto;max-width:1180px;border-radius:48px;background:var(--orange);color:#111;padding:70px 40px;text-align:center;position:relative;overflow:hidden}
+.cta h2{font-size:clamp(32px,4.4vw,52px);max-width:760px;margin:0 auto 14px}
+.cta p{max-width:560px;margin:0 auto 28px;color:#3a2603;font-size:17px}
+.cta .btn-main{background:#111;color:#fff}
+.cta .b1,.cta .b2{position:absolute;border-radius:50%;background:rgba(255,255,255,.18)}
+.cta .b1{width:220px;height:220px;left:-60px;top:-80px}.cta .b2{width:120px;height:120px;right:40px;bottom:-40px}
+
+footer{padding:60px 0 40px;color:var(--ink2);font-size:14px}
+.foot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:24px;align-items:center;border-top:1px solid var(--line);padding-top:30px}
+.foot img{height:54px}
+.credit{margin-top:26px;text-align:center;font-size:13px}
+.credit a{color:var(--ink)}
+
+.wa{position:fixed;right:18px;bottom:18px;z-index:60;width:60px;height:60px;border-radius:50%;background:#25d366;display:none;place-items:center;box-shadow:0 12px 30px rgba(0,0,0,.4)}
+.wa svg{width:30px;height:30px;fill:#fff}
+.wa.on{display:grid}
+
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.2,.8,.2,1),transform .8s cubic-bezier(.2,.8,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1;transform:none;transition:none}.marq .track{animation:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<nav><div class="nav">
+  <a class="logo" href="#topo" aria-label="A&D Eventos"><img src="img/logo-ad.png" alt="A&D Eventos"></a>
+  <ul><li><a href="#espacos">Espaços</a></li><li><a href="#eventos">Eventos</a></li><li><a href="#hotel">Hotel</a></li><li><a href="#escolas">Escolas</a></li><li><a href="#localizacao">Localização</a></li></ul>
+  <a class="btn btn-main" data-cta href="#localizacao">Agendar visita</a>
+</div></nav>
+
+<header class="hero" id="topo">
+  <div class="glow"></div>
+  <div class="wrap hero-grid">
+    <div class="rv">
+      <span class="eyebrow">Turu · São Luís (MA)</span>
+      <h1>Eventos, hotel e esporte <em>no mesmo endereço.</em></h1>
+      <p class="lead">A A&amp;D Eventos reúne casa de eventos, hospedagem, escola de natação e escola de futebol society em um só espaço no Turu.</p>
+      <div class="ctas">
+        <a class="btn btn-main" data-cta href="#localizacao"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 2v4M16 2v4M3 10h18M5 4h14a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2z"/></svg>Agendar uma visita</a>
+        <a class="btn btn-ghost" href="#espacos">Ver os espaços</a>
+      </div>
+      <div class="chips"><span class="chip">Casa de eventos</span><span class="chip">Hotel</span><span class="chip">Natação</span><span class="chip">Futebol society</span><span class="chip">Bufê</span></div>
+    </div>
+    <div class="collage rv">
+      <div class="ring"></div>
+      <div class="c c1"><img src="img/salao-lustres.jpg" alt="Salão de festas com lustres de cristal"></div>
+      <div class="c c2"><img src="img/piscina.jpg" alt="Piscina com raias"></div>
+      <div class="c c3"><img src="img/campo-aereo.jpg" alt="Campo de futebol society visto de cima"></div>
+      <span class="dot d1"></span><span class="dot d2"></span>
+    </div>
+  </div>
+</header>
+
+<div class="marq" aria-hidden="true"><div class="track">
+  <span>Aniversários</span><span>Casamentos</span><span>Formaturas</span><span>Confraternizações</span><span>Palestras</span><span>Hospedagem</span><span>Natação</span><span>Futebol society</span><span>Bufê</span>
+  <span>Aniversários</span><span>Casamentos</span><span>Formaturas</span><span>Confraternizações</span><span>Palestras</span><span>Hospedagem</span><span>Natação</span><span>Futebol society</span><span>Bufê</span>
+</div></div>
+
+<section class="s" id="espacos">
+  <div class="wrap">
+    <div class="head rv"><span class="eyebrow">Os espaços</span><h2>Um espaço para cada momento.</h2><p>Salões, auditório, piscina, campo e área de lazer no mesmo terreno. Seu evento, sua hospedagem e as aulas das crianças sem sair do lugar.</p></div>
+    <div class="cards">
+      <article class="card w7 tall rv"><img src="img/salao-lustres.jpg" alt="Salão de festas com mesas redondas e lustres" loading="lazy"><span class="pill">Casa de eventos</span><div class="t"><h3>Salão de festas</h3><p>Lustres de cristal, mesas redondas, palco e climatização.</p></div></article>
+      <article class="card w5 tall rv"><img src="img/auditorio.jpg" alt="Auditório com cadeiras enfileiradas" loading="lazy"><span class="pill">Corporativo</span><div class="t"><h3>Auditório</h3><p>Para palestras, cursos, reuniões e cultos.</p></div></article>
+      <article class="card w4 rv"><img src="img/salao-multiuso.jpg" alt="Salão multiuso amplo com espelhos" loading="lazy"><span class="pill">Multiuso</span><div class="t"><h3>Salão multiuso</h3><p>Amplo, claro e com espelhos.</p></div></article>
+      <article class="card w4 rv"><img src="img/churrasqueira.jpg" alt="Área de churrasqueira" loading="lazy"><span class="pill">Lazer</span><div class="t"><h3>Churrasqueira</h3><p>Bancada e área coberta.</p></div></article>
+      <article class="card w4 rv"><img src="img/patio.jpg" alt="Pátio com mesas de madeira à sombra" loading="lazy"><span class="pill">Lazer</span><div class="t"><h3>Pátio arborizado</h3><p>Mesas à sombra para receber.</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="s light" id="eventos">
+  <div class="wrap split">
+    <div class="imgs rv">
+      <img class="round" src="img/palco.jpg" alt="Palco decorado com balões" loading="lazy">
+      <img src="img/salao-buffet.jpg" alt="Mesa de bufê montada no salão" loading="lazy">
+      <img class="big" src="img/salao-lustres.jpg" alt="Salão de festas preparado" loading="lazy">
+    </div>
+    <div class="rv">
+      <span class="eyebrow">Eventos</span>
+      <h2 style="font-size:clamp(34px,4.4vw,52px);margin:16px 0 14px">Sua festa pronta, do salão ao bufê.</h2>
+      <p style="color:#55524c;font-size:17px">A A&amp;D cuida do espaço e do serviço de bufê. Você escolhe o formato e recebe seus convidados com estrutura completa.</p>
+      <ul class="list">
+        <li>Aniversários, casamentos, formaturas e confraternizações</li>
+        <li>Palestras, treinamentos e eventos corporativos no auditório</li>
+        <li>Serviço de bufê e bebidas no próprio local</li>
+        <li>Hotel no mesmo endereço para convidados de fora</li>
+      </ul>
+      <div class="ctas" style="margin-top:28px;display:flex;gap:12px;flex-wrap:wrap"><a class="btn btn-main" data-cta href="#localizacao">Fazer um orçamento</a></div>
+    </div>
+  </div>
+</section>
+
+<section class="s" id="hotel">
+  <div class="wrap split">
+    <div class="rv">
+      <span class="eyebrow">Hotel</span>
+      <h2 style="font-size:clamp(34px,4.4vw,52px);margin:16px 0 14px">Descanse a poucos passos da festa.</h2>
+      <p style="color:var(--ink2);font-size:17px">Quartos confortáveis para convidados, equipes esportivas e quem está de passagem por São Luís.</p>
+      <ul class="list">
+        <li>Quartos de casal e com duas camas</li>
+        <li>Ar-condicionado, TV e frigobar</li>
+        <li>Enxoval completo e arrumação caprichada</li>
+        <li>No mesmo endereço do salão e das escolas</li>
+      </ul>
+    </div>
+    <div class="imgs rv">
+      <img class="big" src="img/quarto-casal.jpg" alt="Quarto de casal do hotel" loading="lazy">
+      <img src="img/quarto-duplo.jpg" alt="Quarto com duas camas, TV e frigobar" loading="lazy">
+      <img class="round" src="img/piscina.jpg" alt="Piscina do espaço" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="s light" id="escolas">
+  <div class="wrap">
+    <div class="head rv"><span class="eyebrow">Escolas de esporte</span><h2>Natação e futebol para todas as idades.</h2><p>Aulas no próprio espaço, com estrutura de verdade: piscina com raias e campo society com grama sintética e rede de proteção.</p></div>
+    <div class="schools">
+      <article class="school rv"><img src="img/piscina.jpg" alt="Piscina com raias para aulas de natação" loading="lazy"><div class="b"><h3>Escola de natação</h3><p>Aulas em piscina com raias, com turmas organizadas por nível.</p><div class="tags"><span>Piscina com raias</span><span>Turmas por nível</span><span>Área coberta</span></div></div></article>
+      <article class="school rv"><img src="img/campo-treino.jpg" alt="Treino de futebol no campo society" loading="lazy"><div class="b"><h3>Escola de futebol</h3><p>Treinos no campo society, com turmas por categoria.</p><div class="tags"><span>Categorias por idade</span><span>Grama sintética</span><span>Rede de proteção</span><span>Iluminação</span></div></div></article>
+    </div>
+  </div>
+</section>
+
+<section class="s" id="galeria">
+  <div class="wrap">
+    <div class="head rv"><span class="eyebrow">Galeria</span><h2>Conheça por dentro.</h2></div>
+    <div class="gallery rv">
+      <img src="img/salao-lustres.jpg" alt="Salão de festas" loading="lazy">
+      <img src="img/campo-aereo.jpg" alt="Campo society visto de cima" loading="lazy">
+      <img src="img/quarto-casal.jpg" alt="Quarto de casal" loading="lazy">
+      <img src="img/auditorio.jpg" alt="Auditório" loading="lazy">
+      <img src="img/piscina.jpg" alt="Piscina" loading="lazy">
+      <img src="img/palco.jpg" alt="Palco decorado" loading="lazy">
+      <img src="img/campo-jogo.jpg" alt="Jogo no campo society" loading="lazy">
+      <img src="img/churrasqueira.jpg" alt="Churrasqueira" loading="lazy">
+      <img src="img/salao-buffet.jpg" alt="Bufê no salão" loading="lazy">
+      <img src="img/quarto-duplo.jpg" alt="Quarto duplo" loading="lazy">
+      <img src="img/patio.jpg" alt="Pátio" loading="lazy">
+      <img src="img/salao-multiuso.jpg" alt="Salão multiuso" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<section class="s" id="localizacao" style="padding-top:20px">
+  <div class="wrap loc">
+    <div class="info rv">
+      <span class="eyebrow">Localização</span>
+      <h3 style="margin-top:16px">Venha conhecer.</h3>
+      <div class="row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></svg></span><div><b>Endereço</b><span>Rua Guanabara, 78 · Chácara Brasil, Turu<br>São Luís (MA) · CEP 65066-863</span></div></div>
+      <div class="row"><span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg></span><div><b>Visitas</b><span>Agende pelo WhatsApp e conheça os espaços pessoalmente.</span></div></div>
+      <div class="ctas" style="margin-top:22px;display:flex;gap:10px;flex-wrap:wrap">
+        <a class="btn btn-main" data-cta data-fallback="maps" href="https://www.google.com/maps/search/?api=1&query=Rua+Guanabara+78+Turu+S%C3%A3o+Lu%C3%ADs+MA+65066-863" target="_blank" rel="noopener">Agendar visita</a>
+        <a class="btn btn-ghost" href="https://www.google.com/maps/dir/?api=1&destination=Rua+Guanabara+78+Turu+S%C3%A3o+Lu%C3%ADs+MA+65066-863" target="_blank" rel="noopener">Como chegar</a>
+      </div>
+    </div>
+    <div class="map rv"><iframe title="Mapa da A&D Eventos" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps?q=Rua+Guanabara+78+Turu+S%C3%A3o+Lu%C3%ADs+MA+65066-863&output=embed"></iframe></div>
+  </div>
+</section>
+
+<section class="s" style="padding-top:30px">
+  <div class="wrap"><div class="cta rv">
+    <span class="b1"></span><span class="b2"></span>
+    <h2>Seu próximo evento começa com uma visita.</h2>
+    <p>Fale com a equipe da A&amp;D, conheça os espaços e monte o formato ideal para você.</p>
+    <a class="btn btn-main" data-cta href="#localizacao">Falar com a A&amp;D</a>
+  </div></div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div class="foot">
+      <img src="img/logo-ad.png" alt="A&D Eventos">
+      <div>A&amp;D Assessoria Eventos e Serviços LTDA · CNPJ 16.628.608/0001-03<br>Rua Guanabara, 78 · Turu · São Luís (MA)</div>
+    </div>
+    <p class="credit">Desenvolvido por <a href="https://nexusup.company" target="_blank" rel="noopener">NexusUp Company</a> · NexusUp.company</p>
+  </div>
+</footer>
+
+<a class="wa" id="wa" aria-label="Falar no WhatsApp" target="_blank" rel="noopener"><svg viewBox="0 0 32 32"><path d="M16 3a13 13 0 0 0-11.2 19.6L3 29l6.6-1.7A13 13 0 1 0 16 3zm0 23.6a10.6 10.6 0 0 1-5.4-1.5l-.4-.2-3.9 1 1-3.8-.2-.4A10.6 10.6 0 1 1 16 26.6zm5.8-7.9c-.3-.2-1.9-.9-2.2-1s-.5-.2-.7.2-.8 1-1 1.2-.4.2-.7 0a8.7 8.7 0 0 1-4.3-3.8c-.3-.6.3-.5.9-1.7.1-.2 0-.4 0-.5l-1-2.4c-.3-.6-.5-.5-.7-.5h-.6a1.2 1.2 0 0 0-.9.4 3.6 3.6 0 0 0-1.1 2.7 6.3 6.3 0 0 0 1.3 3.3 14.4 14.4 0 0 0 5.5 4.9c2 .9 2.8.9 3.8.8a3.3 3.3 0 0 0 2.2-1.5 2.7 2.7 0 0 0 .2-1.5c-.1-.2-.3-.3-.6-.4z"/></svg></a>
+
+<script>
+// Número de WhatsApp da A&D (só números, com 55 + DDD). Deixe vazio para os botões levarem à localização.
+const WHATSAPP = "";
+const MSG = encodeURIComponent("Olá! Vim pelo site da A&D Eventos e quero saber mais.");
+if (WHATSAPP) {
+  const url = "https://wa.me/" + WHATSAPP + "?text=" + MSG;
+  document.querySelectorAll("[data-cta]").forEach(a => { a.href = url; a.target = "_blank"; a.rel = "noopener"; });
+  const w = document.getElementById("wa"); w.href = url; w.classList.add("on");
+}
+const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); } }), { threshold: .12 });
+document.querySelectorAll(".rv").forEach(el => io.observe(el));
+</script>
+</body>
+</html>
