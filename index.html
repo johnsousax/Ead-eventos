@@ -40,7 +40,9 @@ nav{position:fixed;inset:14px 14px auto;z-index:50;display:flex;justify-content:
 .nav ul a{font-size:14px;color:var(--ink2);padding:9px 14px;border-radius:99px;transition:.2s}
 .nav ul a:hover{color:var(--ink);background:rgba(255,255,255,.07)}
 .nav .btn{height:44px;padding:0 20px;font-size:14px}
+.nav-r{display:flex;gap:8px}
 @media(max-width:860px){.nav ul{display:none}}
+@media(max-width:520px){.nav-r .btn-ghost{padding:0 14px}.nav-r .btn-main{display:none}}
 
 /* hero */
 .hero{position:relative;padding:130px 0 70px;overflow:hidden}
@@ -157,7 +159,7 @@ footer{padding:60px 0 40px;color:var(--ink2);font-size:14px}
 <nav><div class="nav">
   <a class="logo" href="#topo" aria-label="A&D Eventos"><img src="img/logo-ad.png" alt="A&D Eventos"></a>
   <ul><li><a href="#espacos">Espaços</a></li><li><a href="#eventos">Eventos</a></li><li><a href="#hotel">Hotel</a></li><li><a href="#escolas">Escolas</a></li><li><a href="#localizacao">Localização</a></li></ul>
-  <a class="btn btn-main" data-cta href="#localizacao">Agendar visita</a>
+  <div class="nav-r"><a class="btn btn-ghost" href="/login">Entrar no sistema</a><a class="btn btn-main" data-cta href="#localizacao">Agendar visita</a></div>
 </div></nav>
 
 <header class="hero" id="topo">
